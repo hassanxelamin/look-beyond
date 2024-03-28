@@ -19,7 +19,7 @@ jobs:
           version: latest
           run_install: true
 
-      - run: pnpm run eslint src/ --ext .tsx
+      - run: pnpm run lint src/ --ext .tsx
 
       - run: pnpm run prettier --config .prettierrc 'src/**/*.tsx' --write
 
