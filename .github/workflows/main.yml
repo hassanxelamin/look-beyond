@@ -21,6 +21,6 @@ jobs:
 
       - run: pnpm run lint src/ --ext .tsx
 
-      - run: pnpm run prettier --config .prettierrc 'src/**/*.tsx' --write
+      - run: pnpm run prettier-check --config .prettierrc 'src/**/*.tsx' --write
 
       - run: pnpm run build
